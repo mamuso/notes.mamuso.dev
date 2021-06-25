@@ -1,0 +1,78 @@
+{
+  "main": {
+    "id": "746da0d371050891",
+    "type": "split",
+    "children": [
+      {
+        "id": "5730dbff800ada03",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a5b29c508118728f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "441fb0abc981f8c2",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "235b48ce2c7d3789",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ]
+  },
+  "right": {
+    "id": "1f4e642b87cb0c82",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8dd3516305867061",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ]
+  },
+  "active": "5730dbff800ada03",
+  "lastOpenFiles": [
+    "tags.md",
+    "README.md",
+    "about.md",
+    "dates.md",
+    "index.md",
+    "notes.md",
+    "_notes/How to use the special features.md"
+  ]
+}
