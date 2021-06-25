@@ -3,60 +3,80 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="My linked notebook" property="og:site_name"/>
-    <meta content="My path to perpetual learning." property="og:description">
-    <meta content="{{ site.url }}/about/" property="article:author">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="My linked notebook" property="og:site_name" />
+  <meta content="My path to perpetual learning." property="og:description">
+  <meta content="{{ site.url }}/about/" property="article:author">
 
-    {%- if page.title -%}
-    <meta content="{{ page.title }}" property="og:title">
-    <meta content="article" property="og:type">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {%- else -%}
-    <meta content="website" property="og:type">
-    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
-    {%- endif -%}
+  {%- if page.title -%}
+  <meta content="{{ page.title }}" property="og:title">
+  <meta content="article" property="og:type">
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {%- else -%}
+  <meta content="website" property="og:type">
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {%- endif -%}
 
-    <title>{{site.title}}</title>
+  <title>{{site.title}}</title>
 
-    <link rel="canonical" href="{{site.url}}{{page.url}}"/>
-    <link rel="apple-touch-icon" href="{{site.profile_pic}}">
+  <link rel="canonical" href="{{site.url}}{{page.url}}" />
+  <link rel="apple-touch-icon" href="{{site.profile_pic}}">
 
-    <link rel="icon" href="{{site.favicon}}" type="image/png" sizes="16x16"/>
-    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default"/>
+  <link rel="icon" href="{{site.favicon}}" type="image/png" sizes="16x16" />
+  <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default" />
 
-    <!--[if IE]>
+  <!--[if IE]>
         <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
     <![endif]-->
-    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+  <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+  <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
+
+  <style>
+    :root {
+      --bg-primary: #EDF1F1;
+      --outer-border: #FFFFFF;
+      --text-primary: #333333;
+      --text-link: #4c82d7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-primary: #182335;
+        --outer-border: #141B2A;
+        --text-primary: #d6deeb;
+        --text-link: #ed64a6;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">                    
-        <div class = "box">
-            {%- include header.html -%}
-            {%- include feed.html -%}
+  <div class="container">
+    <div class="box">
+      {%- include header.html -%}
+      {%- include feed.html -%}
 
-            {%- if page.content-type == "notes" 
-                or page.content-type == "post" 
-                or page.content-type == "eg" -%}
-            <main>
-                <h1>{{page.title}}</h1>
-                {%- include content.html -%}
-                <hr>
-                {%- include backlinks.html -%}
-                {%- include related.html -%}
-            </main>
-            {%- endif -%}
-            {%- include comments.html -%}
-            {%- include footer.html -%}
-        </div>
+      {%- if page.content-type == "notes"
+      or page.content-type == "post"
+      or page.content-type == "eg" -%}
+      <main>
+        <h1>{{page.title}}</h1>
+        {%- include content.html -%}
+        <hr>
+        {%- include backlinks.html -%}
+        {%- include related.html -%}
+      </main>
+      {%- endif -%}
+      {%- include comments.html -%}
+      {%- include footer.html -%}
     </div>
+  </div>
 
-    {%- include contextmenu.html -%}
+  {%- include contextmenu.html -%}
 </body>
+
 </html>
 
 {%- if page.content-type == "notes"
