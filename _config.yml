@@ -1,12 +1,12 @@
-title: notenote.link
-name: My linked notebook
-user_description: notenote.link
-notes_url: "hhttps://mamuso.github.io/notes.mamuso.dev/"
+title: notes.mamuso.dev
+name: notes.mamuso.dev
+user_description: Manuel's notes
+notes_url: "https://notes.mamuso.dev/"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://mamuso.github.io/notes.mamuso.dev/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://notes.mamuso.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
 # Build settings
