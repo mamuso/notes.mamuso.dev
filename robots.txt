@@ -1,1 +1,1 @@
-Sitemap: https://mamuso.github.io/notes.mamuso.dev//sitemap.xml
+Sitemap: https://notes.mamuso.dev//sitemap.xml
